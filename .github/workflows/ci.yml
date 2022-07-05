@@ -1,4 +1,4 @@
-name: Validate Data
+name: Build the project
 on:
   push:
     branches:

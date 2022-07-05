@@ -55,7 +55,7 @@ func Run(cfg Config) error {
 
 		switch ct {
 		case "application/json":
-			json.NewEncoder(w).Encode(d)
+			_ = json.NewEncoder(w).Encode(d)
 		case "":
 			fmt.Fprint(w, d.String())
 		default:
