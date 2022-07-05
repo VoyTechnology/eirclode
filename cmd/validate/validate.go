@@ -6,6 +6,7 @@ import (
 	"errors"
 	"fmt"
 	"io"
+	"os"
 	"strconv"
 
 	"eirclode.voy.technology/data"
@@ -14,6 +15,7 @@ import (
 func main() {
 	if err := run(); err != nil {
 		fmt.Printf("%+v\n", err)
+		os.Exit(1)
 	}
 }
 
